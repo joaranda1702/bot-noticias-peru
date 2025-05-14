@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: noticias-peru-diario
+    env: python
+    schedule: "0 12 * * *"  # Esto es 07:00 Lima (UTC-5)
+    buildCommand: ""
+    startCommand: "python main.py"
